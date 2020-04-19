@@ -30,5 +30,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i <= arr1.length - 1; i++) {
             Log.v("TAG", String.valueOf(arr1[i]));
         }
+
+        CommonNumbers numbers = new CommonNumbers();
     }
 }
