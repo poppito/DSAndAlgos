@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import io.embry.dsandalgos.algos.MergeSort;
+import io.embry.dsandalgos.algos.Monotonic;
 import io.embry.dsandalgos.algos.UniqueCharacters;
 
 import static junit.framework.TestCase.assertFalse;
@@ -34,5 +35,15 @@ public class SolutionTests {
         for (int i: arr) {
             System.out.println(i);
         }
+    }
+
+    @Test
+    public void monotonic() {
+        int[] arr1 = {6, 6, 5, 4, 3, 0}; //true
+        int[] arr2 = {1, 1, 3, 5, 11, 0}; //false
+
+        Monotonic monotonic = new Monotonic();
+        assertTrue(monotonic.isMonotonic(arr1));
+        assertFalse(monotonic.isMonotonic(arr2));
     }
 }

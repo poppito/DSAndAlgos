@@ -2,7 +2,7 @@ package io.embry.dsandalgos.ds;
 
 public class BasicBinaryTree<T extends Comparable> {
 
-    private Node root;
+    public Node root;
 
     private int size;
 
@@ -118,11 +118,11 @@ public class BasicBinaryTree<T extends Comparable> {
          }
     }
 
-    private class Node {
-        T item;
-        Node left;
-        Node right;
-        Node parent;
+    public class Node {
+        public T item;
+        public Node left;
+        public Node right;
+        public Node parent;
 
         public Node(T item) {
             this.left = null;
